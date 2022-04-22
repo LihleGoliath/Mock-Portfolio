@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+/*   */
+body{
+    font-family:serif;
+    font-style: italic;
+    font-size: larger;
+    color:black;
+    background: linear-gradient(rgb(5, 60, 94),rgb(25, 107, 129));
+    
+}
+.navbar{    
+    position: fixed;
+    z-index: 100;
+width:  5%;
+height: 100vh;
+    display: flex;
+    justify-content:flex-start ;
+    align-items: flex-start;
+    padding-left: 15px;
+    background-color: black;
+   
+}
+.navlink{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+
+a{
+    color: blue;
+}
+i{
+    font-size: larger;
+}
+section{
+    width: 100vw;
+    height: 500px;
+    padding-top: 2%;
+    padding-left: 10%;
+}
+section.about{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+section:nth-of-type(even){
+    background-color: rgba(255, 255, 255, 0.774);
+}
+/* Home page */
+#landing{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background: url(./245060513_1096837817729123_7001634022760150047_n-removebg-preview\ \(1\).png);
+    background-size:cover;
+    background-position: center;
+   
+}
+.home_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10%;
+}
+H1{
+    font-size: 3rem;
+}
+/* About page */
+.about_page{
+    width: 100vw;
+    display: flex;
+flex-direction: column;
+justify-content: center; 
+gap: ;
+}
+#head{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.ab{
+    width:100vw;
+    display:flex;
+
+}
+
+#image{
+    width: 30%;
+height: 300px;
+object-fit: cover;
+border-radius:15px ;
+}
+#par{
+    width: 70%;
+    padding-left: 30px;
+}
+/* Media  */
+/* Skills section */
+/* .skills{
+    padding-top: 10%; 
+    
+} */
+.skills>h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+meter{
+    font-size: 3rem;
+
+}
+.skillsbar{
+    display: flex;
+    flex-wrap: wrap;
+gap: 50px;
+margin-top: 50px;
+}
+/* projects */
+#projects{
+    height:100vh;
+
+}
+#Projects{
+    text-align: center;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+}
+#cal{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius:20px ;
+}
+.Holiday{
+    padding-right: 5%;
+}
+#holi{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius:20px ;
+/* Media */
+
+ 
+
+
+
+
+
+
+
+/* Resume */
+#Resume{
+    text-align: center
+    ;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+
+/* Place the container to the left */
+.left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }  
+
+
+
+
+
+
+
+
+/* testmonials */
+
+
+#test{
+text-align: center;
+padding-bottom: 20px;
+}
+.pi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.person{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+/*Media Repuries */
+
+
+
+
+/* Contacts */
+
+.contactpage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: larger;
+}
+input{
+    font-size: 20px;
+}
+.contact{
+    width: 50%;
+
+}
+.form{
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:10%;
+    padding-left: 150px;
+    height: auto;
+}
+.form{
+display:inline-block ;
+}
+.head2{
+    display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 10px;
+
+}
+.form1{
+    
+}
+#name,#email{
+display: flex;
+}
+#messages{
+    width:1000px;
+    height:8rem ;
+    font-size:;
+}
+input{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+margin-bottom: 10px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 100PX;
+    
+}
+
+/* Media repuries */
+
+/* footer */
+.footerpage{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.socailhandles{
+    text-align: center;
+}
