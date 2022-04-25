@@ -388,7 +388,11 @@ align-items: center;
     }
     button{
         display: block;
-
+        position: fixed;
+        color: white;
+        background-color: black;
+        margin: 10px;
+        z-index: 200px;
     }
 
 }
@@ -407,5 +411,13 @@ align-items: center;
      .pi{
          display: flex;
          flex-direction: column;
+     }
+     .ab{
+         display: flex;
+         flex-direction: column;
+     }
+
+     #image{
+         max-width: 100vw;
      }
  }
